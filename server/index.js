@@ -53,7 +53,8 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-const port = process.env.PORT || 5000
+// const port = process.env.PORT || 5000 //맥은 5000이미 os가 써서 변경함.
+const PORT = process.env.PORT || 5001
 
 app.listen(port, () => {
   console.log(`Server Listening on ${port}`)
